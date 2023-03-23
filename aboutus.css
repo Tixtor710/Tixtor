@@ -1,0 +1,51 @@
+h1{
+    color: goldenrod;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+}
+p{
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: oblique;
+    line-break: normal;
+    
+}
+body{
+    background-color: black
+    
+}
+
+
+.arrow{
+    height: 72;
+    width: 72;
+}
+
+img{
+    object-fit: cover;
+    align-self: center;
+}
+
+hr{
+    color: rgb(255, 222, 35);
+
+}
+.history-text{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    
+    margin: 30px 25px;
+    color: gold;
+    background: rgba(0, 0, 0, 0.342);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: inset 3px -3px 5px rgba(255, 219, 100, 0.548),inset -3px 3px 5px rgba(255, 219, 100, 0.548);
+    
+}
+.aboutus-link{
+    text-decoration: none;
+    color: rgb(207, 81, 81);
+    font-weight: 700;
+    text-decoration: underline;
+}
