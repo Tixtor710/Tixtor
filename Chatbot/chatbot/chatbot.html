@@ -1,11 +1,12 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>ChatBot</title>
     <style>
-        /* Apply black and gold color palette */
+        
         body {
             background-color: #1d1d1d;
             color: #ffd700;
@@ -66,28 +67,37 @@
 
     <script>
         function sendMessage() {
-            // Get the user input
+            
             var userInput = document.getElementById('message').value;
 
-            // Call your chatbot API or function here to get the chatbot's response
+            
             var chatbotResponse = getChatbotResponse(userInput);
 
-            // Display the chatbot's response
+            
             var chatbox = document.getElementById('chatbox');
             chatbox.innerHTML += '<p><strong>You:</strong> ' + userInput + '</p>';
             chatbox.innerHTML += '<p><strong>Chatbot:</strong> ' + chatbotResponse + '</p>';
 
-            // Clear the input field
+            
             document.getElementById('message').value = '';
 
-            // Prevent the form from submitting
+            
             return false;
         }
 
         function getChatbotResponse(userInput) {
-            // Call your chatbot API or function here to get the chatbot's response
-            // For this example, we will just return a hardcoded response
-            return "Hello, I am a chatbot!";
+            var responses = {
+                "hello": "Hi there!",
+                "how are you": "I'm doing well, thanks for asking!",
+                "what's your name": "My name is ChatBot!",
+                "tell me about Tixtor?": "Tixtor is a digital content production company",
+                "What's Tixtor Motto?":"Capturing each and every moment frame by frame",
+                
+            };
+
+                var chatbotResponse = responses[userInput.toLowerCase()] || "I'm sorry, I don't understand.";
+
+            return chatbotResponse;
         }
     </script>
 </body>
