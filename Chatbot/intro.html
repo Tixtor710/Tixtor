@@ -1,0 +1,32 @@
+<form>
+    <input type="text" id="message">
+    <button type="submit">Send</button>
+</form>
+<div id="chatbox"></div>
+<link rel="stylesheet" href="chatbot.css">
+<form onsubmit="return sendMessage()">
+    <input type="text" id="message">
+    <button type="submit">Send</button>
+</form>
+<div id="chatbox"></div>
+
+<script>
+    function sendMessage() {
+        // Get the user input
+        var userInput = document.getElementById('message').value;
+
+        // TODO: Send the user input to the chatbot and get the response
+
+        // Display the chatbot's response
+        var chatbox = document.getElementById('chatbox');
+        chatbox.innerHTML += '<p><strong>You:</strong> ' + userInput + '</p>';
+        chatbox.innerHTML += '<p><strong>Chatbot:</strong> ' + chatbotResponse + '</p>';
+
+        // Clear the input field
+        document.getElementById('message').value = '';
+
+        // Prevent the form from submitting
+        return false;
+    }
+</script>
+

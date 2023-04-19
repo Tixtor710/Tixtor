@@ -1,0 +1,14 @@
+.message {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.user {
+    background-color: #000000;
+}
+
+.chatbot {
+    background-color: #ffcf32;
+}
