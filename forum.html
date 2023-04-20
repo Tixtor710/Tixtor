@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <link rel="stylesheet" href="forum.css">
   <title>Forum</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: gold;
     }
     h1 {
       text-align: center;
       margin-top: 50px;
+      color: #e9c430;
     }
     #posts {
       max-width: 800px;
@@ -21,9 +26,11 @@
     }
     .post h2 {
       margin-top: 0;
+      color: #e9c430;
     }
     .post p {
       margin-top: 0;
+      color: #e9c430;
     }
     form {
       max-width: 800px;
@@ -43,21 +50,50 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       box-sizing: border-box;
+      color: #e9c430;
     }
     input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
+      background-color: #000000;
+      color: rgb(253, 218, 42);
       padding: 10px 20px;
-      border: none;
+      border:paleturquoise;
       border-radius: 4px;
       cursor: pointer;
     }
     input[type="submit"]:hover {
-      background-color: #45a049;
+      background-color: #46baf0;
     }
   </style>
 </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Tixtor Studios</title>
+</head>
 <body>
+  <header>
+      <div class="navbar">
+          <img class="nav-logo"src="./assets/banner.png" alt="Banner of Tixtor Studios">
+          <nav>
+      
+          <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="https://tixtorwrites.blogspot.com" target="_blank">blog</a></li>
+              <li><a href="https://teamtixtor710.carrd.co" target="_blank">Socials</a></li>
+              <li><a href="podcast.html">Podcasts</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="forum.html">Forum</a></li>
+              <li><a href="Chatbot/chatbot/chatbot.html">Chat with us</a></li>
+          </ul>
+          </nav>
+      </div>
+
+  
+  </header>
+<body>
+  
   <h1>Forum</h1>
   <div id="posts">
     <form name="frmContact" method="post" action="forum.php"></form>
@@ -67,9 +103,9 @@
   <form method="post">
     <label for="author">Name:</label>
     <input type="text" id="author" name="author" required>
-    <label for="title">Title:</label>
+    <label for="title">Email:</label>
     <input type="text" id="title" name="title" required>
-    <label for="body">Body:</label>
+    <label for="body">Detail your query here:</label>
     <textarea id="body" name="body" required></textarea>
     <input type="submit" value="Submit">
   </form>
