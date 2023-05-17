@@ -27,7 +27,7 @@ function Forum() {
           onChange={(e) => setAuthor(e.target.value)}
           required
         />
-        <label htmlFor="title">Query:</label>
+        <label htmlFor="title">e-mail</label>
         <input
           type="text"
           id="title"
